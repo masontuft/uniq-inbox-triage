@@ -9,3 +9,10 @@ out/
 !.env.example
 out_smoke/
 run.log
+
+# Challenge packet, results, and private skills stay local. The READMEs explain how to fill these folders.
+data/*
+!data/README.md
+submission/*
+!submission/README.md
+skills/

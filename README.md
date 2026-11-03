@@ -5,6 +5,9 @@ Paste in tomorrow's `inbox.csv` and run it again.
 
 ## Run it
 
+`data/` and `submission/` are empty in the repo on purpose: the challenge packet and its results are confidential.
+Fill `data/` first, following [data/README.md](data/README.md).
+
 ```bash
 cp .env.example .env        # then fill in LLM_API_KEY (any OpenAI-compatible provider: Groq, xAI, Gemini, OpenAI)
 python3 triage.py --list-models          # pick a model id, put it in .env as LLM_MODEL
@@ -15,7 +18,8 @@ Outputs in `out/`: `results.csv` (the six required columns), `results.json` (plu
 `report.html` (priority-sorted view for the owner). Python 3.10+ standard library only, no installs.
 
 Useful flags: `--only E05,E16` to rerun specific emails, `--orders` and `--kb` to point at updated files,
-`--today` to set the "current" date (defaults to the real date).
+`--today` to set the "current" date (defaults to the real date). To package results for sending, see
+[submission/README.md](submission/README.md).
 
 ## How it works
 
