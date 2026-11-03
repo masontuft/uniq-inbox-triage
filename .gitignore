@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+.claude/settings.local.json
+__pycache__/
+out/
+
+!.env.example
+out_smoke/
+run.log
